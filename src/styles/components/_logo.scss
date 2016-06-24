@@ -1,0 +1,27 @@
+.logo {
+  position: relative;
+  height: 92px;
+  width: 100%;
+  text-align: center;
+
+  &__inner {
+    position: relative;
+    height: 92px;
+    width: 272px;
+    margin: 0 auto;
+
+    &:before {
+      position: absolute;
+      bottom: 0;
+      left: 215px;
+      color: #4285f4;
+      font: 16px/16px Arial, sans-serif;
+      content: attr(data-region);
+    }
+  }
+
+  img {
+    height: 92px;
+    width: 272px;
+  }
+}

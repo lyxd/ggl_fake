@@ -1,0 +1,31 @@
+.sign-in {
+
+  &__btn {
+    a {
+      display: inline-block;
+      border: 1px solid #4285f4;
+      font-weight: bold;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      padding: 0 12px;
+      margin-left: 10px;
+      border-radius: 2px;
+      background: #4285f4 linear-gradient(to top,#4387fd,#4683ea);
+      box-sizing: border-box;
+      height: 30px;
+      line-height: 28px;
+      font-size: small;
+
+      &:hover {
+        text-decoration: none;
+        box-shadow: 0 1px 0 rgba(0,0,0,.15);
+      }
+
+      &:visited {
+        color: #fff;
+      }
+    }
+  }
+
+}

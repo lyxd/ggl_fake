@@ -1,0 +1,76 @@
+@import "normalize";
+@import "mixins";
+
+@import "components/header";
+@import "components/sign-in";
+@import "components/services";
+@import "components/logo";
+@import "components/search";
+@import "components/footer";
+
+
+body, html {
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  color: #222;
+}
+
+.wrap {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.content {
+  height: 100%;
+  box-sizing: border-box;
+  padding-bottom: 41px;
+  text-align: center;
+
+  &:before {
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+    content: "";
+
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  .l-center {
+    display: inline-block;
+    vertical-align: middle;
+    width: 584px;
+    text-align: left;
+    box-sizing: border-box;
+    padding-bottom: 260px;
+
+    @media screen and (max-height: 900px) {
+      padding-bottom: 140px;
+    }
+
+    @media screen and (max-width: 1249px) {
+      width: 486px;
+    }
+
+    @media screen and (max-width: 960px) {
+      width: 453px;
+    }
+
+    @media screen and (max-width: 960px) {
+      padding-bottom: 40px;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 90%;
+      margin: 200px auto 0;
+      display: block;
+    }
+  }
+
+}
